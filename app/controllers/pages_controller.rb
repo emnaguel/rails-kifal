@@ -4,6 +4,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def merci
+  def note
   end
 end
