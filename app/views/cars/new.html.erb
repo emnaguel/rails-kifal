@@ -1,0 +1,9 @@
+<%= simple_form_for [@car] do |f| %>
+  <%= f.input :marque %>
+  <%= f.input :modele %>
+  <%= f.input :année %>
+  <%= f.input :km %>
+   <%= f.submit "add a car", class: "btn btn-primary" %>
+<% end %>
+
+

@@ -1,0 +1,8 @@
+<%= simple_form_for [@driver] do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :email %>
+  <%= f.input :téléphone %>
+  <%= f.input :rdv %>
+  <%= f.submit "add a driver", class: "btn btn-primary" %>
+<% end %>
