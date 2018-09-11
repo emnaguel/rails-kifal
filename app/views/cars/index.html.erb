@@ -1,6 +1,52 @@
-<% @cars.each do |car| %>
-  <li><%= car.marque %></li>
-  <li><%= car.modele %></li>
-  <li><%= car.prix %></li>
-  <li><%= car.km %></li>
+<div class="container">
+   <div class="row">
+   </div>
+
+</div>
+
+
+
+<div class="container">
+
+ <div class="row">
+ <% @cars.each do |car| %>
+  <div class="col-xs-12 col-sm-4">
+    <div class= "card-container">
+
+
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+ <%= link_to car_path(car.id), class: 'card-link' do %>
+
+      <div class="card-description">
+        <h2></h2>
+        <p></p>
+      </div>
+
+
+    </div>
 <% end %>
+
+
+
+
+    <div class="card-footer">
+       <div class="card-details">
+        <p class="marque"><%= car.marque %> <%= car.modele %></p>
+        <p class="prix"><%= car.prix %> MAD</p>
+        </div>
+
+      <div class="card-price"><%= car.année %> - <%= car.km %></div>
+    </div>
+  </div>
+</div>
+  <% end %>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+

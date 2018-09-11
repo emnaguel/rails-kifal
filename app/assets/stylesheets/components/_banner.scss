@@ -1,8 +1,8 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
-    background-position: center;
+  height: 85vh;
+  background-position: center;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -23,8 +23,8 @@
 }
 
 .banner-content {
-    display: flex;
-    width: 58vw;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 58vw;
+  justify-content: space-between;
+  align-items: center;
 }

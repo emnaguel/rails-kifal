@@ -1,0 +1,15 @@
+<% if @car.pictures.attached? %>
+<!-- @post.image.present? will always return true, use attached? to check presence -->
+  <p>
+    <strong>Image:</strong>
+    <br>
+    <%= image_tag @car.pictures[0] %>
+    <%= image_tag @car.pictures[1] %>
+
+
+  </p>
+<% end %>
+
+
+
+

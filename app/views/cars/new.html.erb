@@ -1,9 +1,32 @@
-<%= simple_form_for [@car] do |f| %>
-  <%= f.input :marque %>
-  <%= f.input :modele %>
-  <%= f.input :année %>
-  <%= f.input :km %>
-   <%= f.submit "add a car", class: "btn btn-primary" %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <div class="form-login">
+        <h2 class = "title-form">VENDRE MA VOITURE</h2>
+          <%= simple_form_for [@car] do |f| %>
+          <div class="form-inputs">
+            <%= f.input :marque, label: "Marque" %>
+            <%= f.input :modele, label: "Modèle" %>
+            <%= f.input :année, label: "Année" %>
+            <%= f.input :prix, label: "Prix" %>
+            <%= f.input :km, label: "Kilométrage" %>
+            <%= f.file_field :pictures, :multiple => true, :class => "form-control" %>
+            <%= f.file_field :pictures, :multiple => true, :class => "form-control" %>
+            <%= f.file_field :pictures, :multiple => true, :class => "form-control" %>
+            <%= f.file_field :pictures, :multiple => true, :class => "form-control" %>
+            <%= f.file_field :pictures, :multiple => true, :class => "form-control" %>
+            <div class="form-actions">
+               <%= link_to new_driver_path, class: "btn btn-primary" do %>
+              <i class="fas fa-arrow-left"></i>
+              <% end %>
+             <%= button_tag type: 'submit', class: "btn btn-primary" do %>
+              <i class="fas fa-arrow-right"></i>
+             <% end %>
 
-
+           </div>
+      <% end %>
+      <!-- Insert form here -->
+    </div>
+  </div>
+</div>
+</div>
