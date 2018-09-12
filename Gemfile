@@ -35,3 +35,4 @@ group :development, :test do
 end
 
 gem 'coffee-rails'
+gem "aws-sdk-s3", require: false
