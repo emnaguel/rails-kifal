@@ -12,7 +12,7 @@ amazon:
  access_key_id: <%= ENV['AKIAJ5NXWDTFH74KBTAQ'] %>
  secret_access_key: <%= ENV['ULzwgnMuTTBN10D+kfOQ1cZhgeT7SWahDvbRrm7J'] %>
  region: us-east-1
- bucket: <%= ENV['emnaguel'] %>
+ bucket: <%= ENV['kifal'] %>
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
