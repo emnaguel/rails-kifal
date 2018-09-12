@@ -3,7 +3,7 @@ ActiveAdmin.register Car do
   form do |f|
     f.inputs do
       f.input :driver_id
-      f.input :cover_picture, as: :file
+
       f.input :pictures, as: :file, input_html: { multiple: true }
       f.input :pictures, as: :file, input_html: { multiple: true }
       f.input :pictures, as: :file, input_html: { multiple: true }
