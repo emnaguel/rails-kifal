@@ -36,3 +36,4 @@ end
 
 gem 'coffee-rails'
 gem "aws-sdk-s3", require: false
+gem 'coffee-script-source', '~> 1.8'

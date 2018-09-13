@@ -21,6 +21,11 @@ ActiveAdmin.register User do
   end
 
 
+  # member_action :sign_out, method: :delete do
+  #  resource.sign_out!
+  #  redirect_to destroy_user_session_path
+  # end
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

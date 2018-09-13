@@ -7,16 +7,14 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <% if user_signed_in? && admin = current_user %>
+    <% if user_signed_in? && current_user.admin %>
 
 
       <!-- Links when logged in -->
       <%= link_to "Nos Services", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Qui sommes-nous ?", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Contact", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to destroy_user_session_path, class: "navbar-wagon-item navbar-wagon-link", method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-            <% end %>
+
 
       <!-- Avatar with dropdown menu -->
 

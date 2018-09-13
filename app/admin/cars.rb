@@ -1,10 +1,12 @@
 ActiveAdmin.register Car do
   permit_params :marque, :modele, :année, :prix, :km, :driver_id, { pictures: [] }
+
+
+
+
   form do |f|
     f.inputs do
       f.input :driver_id
-
-      f.input :pictures, as: :file, input_html: { multiple: true }
       f.input :pictures, as: :file, input_html: { multiple: true }
       f.input :pictures, as: :file, input_html: { multiple: true }
       f.input :pictures, as: :file, input_html: { multiple: true }
@@ -19,6 +21,15 @@ ActiveAdmin.register Car do
     end
     f.actions
   end
+
+  #show do
+  #  attributes_table do
+  #    row :marque
+  #    row :pictures do |ad|
+  #      image_tag url_for(ad.pictures)
+   #   end
+   # end
+  #end
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
