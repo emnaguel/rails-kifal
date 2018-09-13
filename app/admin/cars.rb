@@ -1,9 +1,6 @@
 ActiveAdmin.register Car do
   permit_params :marque, :modele, :année, :prix, :km, :driver_id, { pictures: [] }
 
-
-
-
   form do |f|
     f.inputs do
       f.input :driver_id
